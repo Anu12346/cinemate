@@ -7,7 +7,7 @@ export const MovieDetail = () => {
   const [movie, setMovie] = useState({});
   const image = movie.poster_path ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}` : Backup ;
 
-  const pageTitle = useTitle(movie.title);
+  useTitle(movie.title);
 
 
   useEffect(() => {
